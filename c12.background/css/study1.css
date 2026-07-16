@@ -1,0 +1,44 @@
+*{margin:0;padding:0;}
+.a{
+    border:1px solid #000;
+    height:1500px;
+    background-color: aqua;
+    background-image: url("../img/cat.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 100PX) 200PX;
+    background-size: auto 50%;
+}
+.b{
+    border:1px solid #000;
+    height:1500px;
+    background: aqua url("../img/cat.jpg") no-repeat calc(100% - 100PX) 200PX/ auto 50; 
+}
+.c{
+    border:1px solid red;
+    height:1000px;
+    background: purple url(../img/cat.jpg) no-repeat 50% 50%/contain;
+    background-blend-mode: multiply;
+}
+.d{
+    border:1px solid red;
+    height:1000px;
+    background:
+    url("../img/cat.jpg") no-repeat 50% 50%/400px auto,
+    url("../img/cat2.jpg") no-repeat 50% 50%/500px auto,
+    url("../img/cat3.jpg") no-repeat 50% 50%/600px auto
+}
+.e{
+    border:1px solid red;
+    height:1000px;
+    background:
+    url(../img/cat2.jpg) no-repeat 50% 50% / 800px auto,
+    linear-gradient(30deg,rgba(255, 0, 0) 40%,blue 60%,pink 80%);
+}
+.e .box{
+    width:400px;
+    height:800px;
+    background-color: rgba(255,255,255,0.5);
+    margin:0 auto;
+    margin-top:100px;
+    backdrop-filter:blur(15px);
+}

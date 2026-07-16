@@ -1,0 +1,46 @@
+.point-type{font-family: "Aboreto", system-ui;}
+
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+}
+
+.hero-banner{
+    height:599px;
+    background: url("../img/hero.png") no-repeat 50% 50% / cover;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.hero-banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.wrap{
+    width:1600px;
+    margin:0 auto;
+}
+.con1{
+    margin-bottom: 3rem;
+}
+.con1 h2{
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.con1 p{
+    padding:1rem 0;
+    border-top: 1px solid #000000;
+    text-align: right;
+}
+figure.coffee img{
+    width:1000px;
+    height:430px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
