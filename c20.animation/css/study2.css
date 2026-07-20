@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+}
+
+#sky{
+
+    position:relative;
+
+    width:100vw;
+    height:100vh;
+
+    background:
+        radial-gradient(circle at bottom,#16244d 0%,#0b1026 45%,#020111 100%);
+
+}
+
+/* 작은 별 */
+
+#sky::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+
+    opacity:.8;
+
+}
+
+/* 별똥별 */
+
+.shooting-star{
+
+    position:absolute;
+
+    height:2px;
+
+    border-radius:999px;
+
+    transform:rotate(45deg);
+
+    background:
+        linear-gradient(
+            to left,
+            white,
+            rgba(255,255,255,0)
+        );
+
+    filter:
+        drop-shadow(0 0 8px white)
+        drop-shadow(0 0 18px #7ffcff);
+
+    animation-name:shoot;
+
+    animation-timing-function:linear;
+
+    animation-fill-mode:forwards;
+
+}
+
+/* 머리 */
+
+.shooting-star::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-2px;
+    top:-3px;
+
+    width:8px;
+    height:8px;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 10px white,
+        0 0 20px cyan;
+
+}
+
+/* 이동 */
+
+@keyframes shoot{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translate(0,0)
+            rotate(45deg);
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    90%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translate(900px,900px)
+            rotate(45deg);
+
+    }
+
+}
