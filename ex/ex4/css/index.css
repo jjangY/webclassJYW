@@ -1,0 +1,64 @@
+.pt{font-family: "Aboreto", system-ui;}
+html{
+    font-size: 20px;
+    font-family: 'Pretendard';
+}
+main{
+    padding-top: 6rem;
+    background: url(../img/bg.svg) no-repeat 50% 0% / 100% auto;
+}
+.wrap{
+    width:1600px;
+    margin:0 auto;
+}
+.banner{
+    height:599px;
+    background: url(../img/hero.jpg) no-repeat 50% 50% / cover;
+    border-radius: 2.5rem;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-top: 6rem;
+    margin-bottom: 2.4rem;
+}
+.title+*{
+    margin-bottom: 2.4rem;
+}
+.cafe-figure{
+    display: flex;
+    gap:1rem;
+}
+.cafe-figure figure{
+    flex:1;
+    aspect-ratio: 1/1;
+}
+.cafe-figure.asr1 figure{
+    flex:1;
+    aspect-ratio: 790/434;
+}
+.cafe-figure figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.caption{
+    margin: 2rem 0;
+    text-align: center;
+}
+.caption h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 140%;
+}
