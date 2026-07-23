@@ -1,0 +1,6 @@
+@media (max-width:1600px){
+    .container {
+        width: auto;
+        margin: 0 2rem;
+    }
+}

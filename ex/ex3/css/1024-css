@@ -1,0 +1,9 @@
+@media (max-width:1024px){
+    html{
+        font-size:18px;
+    }
+    .cafe-figure figure img {
+        aspect-ratio: 467/434;
+    }
+    
+}

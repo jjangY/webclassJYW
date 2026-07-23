@@ -18,10 +18,11 @@ main {
     align-items: center;
     color:#fff;
 }
-.hero-banner h1{
-    font-size: 2.5rem;
+.hero-banner h1 {
+    font-size: 50px;
     line-height: 100%;
     text-transform: uppercase;
+    text-align: center;
 }
 .container{
     width:1600px;

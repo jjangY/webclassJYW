@@ -1,0 +1,26 @@
+@media (max-width:768px){
+    html{
+        font-size:14px;
+    }
+    .container {
+        margin: 0 1rem;
+    }
+    .hero-banner h1 {
+        font-size: 50px;
+    }
+    .con1 h2 {
+        font-size: 50px;
+        line-height: 90%;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    .con1 {
+        background: url('../img/deco.svg') no-repeat 50% -35px;
+    }
+    .cafe-figure {
+        flex-direction: column;
+    }
+    .cafe-figure figure img {
+        aspect-ratio: 365/200;
+    }
+}
