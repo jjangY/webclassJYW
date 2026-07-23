@@ -37,10 +37,40 @@ html{
     padding:1rem 0;
     border-top: 1px solid #000000;
     text-align: right;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
 }
 figure.coffee img{
     width:1000px;
     height:430px;
     object-fit: cover;
     margin-bottom: 1rem;
+}
+@media (max-width:1650px){
+    .wrap{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+
+@media (max-width:1024px){
+    html{
+    font-size:18px;
+    }
+    figure.coffee img{
+        height:350px;
+    }
+}
+@media(max-width:768px){
+    html{
+    font-size:14px;
+    }
+    .wrap{
+        margin: 0 1rem;
+    }
+    igure.coffee img{
+        height:200px;
+    }
 }
