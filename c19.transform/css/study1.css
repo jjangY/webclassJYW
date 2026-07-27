@@ -11,30 +11,24 @@
     perspective-origin: 50% 50%;
 }
 .a{background-color: red;}
-
 .a:hover{
-    /* transform:translateX(200px)
-    translateY(100px)
-    translateZ(20px); */
-    transform:translate3d(200px,100px,50px);
+    /* transform:translateX(200px)translateY(100px)translateZ(50px); */
+    transform: translate3d(200px,100px,50px);
 }
 .b{
     background-color: lime;
 }
 .b:hover{
-    transform: perspective(1000px)
-    rotateZ(360deg);
+    transform: perspective(300px)rotateY(360deg);
 }
 .c{
     background-color: blue;
-    transform-origin: 0% 0%;
+    transform-origin: 0% 100%;
 }
 .c:hover{
     transform: scale(2);
 }
-.d{
-    background-color: green;
-}
+.d{background-color: green;}
 .d:hover{
     transform: skewY(-30deg);
 }
