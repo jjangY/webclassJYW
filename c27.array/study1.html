@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h1>배열 - array</h1>
+    <p>연관된 데이터들을 모아놓은 집합</p>
+    <p>배열은, (콤마)로 구분하여 원소를 여러개 입력할 수 있다.</p>
+    <p>배열은 순번이라는 개념이 있다.(먼저 저장된 순서 -> 0부터 카운팅)</p>
+    <script>
+        let a=[1,3,4,'안녕',66,true,['abc','bcde',3,4]]
+        a[6][0][0]
+
+        let fruits = ['멜론','수박','복숭아','자두','골드키위','참외']
+        console.log(fruits)
+        fruits.pop()
+        console.log(fruits)
+        fruits.push('바나나')
+        console.log(fruits)
+        console.log(fruits.length)
+        fruits.splice(2,2,'샤인머스켓','포도')
+        console.log(fruits)
+
+        let classmate = [
+            '유채린',
+            '배수정',
+            '최윤성',
+            '최선미',
+            '김가온'
+        ]
+        let newClass = ['윤희정',...classmate,'안정현',]
+        console.log(newClass)
+    </script>
+</body>
+</html>
