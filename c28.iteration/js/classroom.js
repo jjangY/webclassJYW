@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>배열 응용</title>
-</head>
-<body>
-    <script>
-        let classRoom =[
+let classRoom =[
            ['김하경',20,'여자',false,['게임하기','그림그리기','음악듣기']],
            ['성대한',20,'남자',false,['그림그리기','게임하기']],
            ['이선영',24,'여자',false,['그림그리기','게임하기','인형만들기']],
@@ -27,6 +18,3 @@
            ['배수정',38,'여자',false,['독서','뮤지컬보기']],
            ['유채린',24,'여자',false,['여행가기','요리하기','블로그쓰기','음악듣기']],
         ]
-    </script>
-</body>
-</html>

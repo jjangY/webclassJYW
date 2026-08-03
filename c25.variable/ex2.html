@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 체질량지수</title>
+    <link rel="stylesheet" href="css/ex2.css">
+</head>
+<body>
+    <main class="bmi-page">
+        <section class="bmi-card" aria-labelledby="page-title">
+            <p class="eyebrow">HEALTH CHECK</p>
+            <h1 id="page-title">나의 체질량지수(BMI)</h1>
+            <p class="description">체질량지수(BMI)는 체중(kg)을 키(m)의 제곱으로 나눈 값입니다. 개인의 건강 상태를 간단하게 확인하는 참고 지표로 활용할 수 있습니다.</p>
+            <table>
+                <script>
+                let userName = prompt('이름 입력')
+                let userWeight = Number(prompt('체중을 입력(kg)'))
+                let userHeight = Number(prompt('키를 입력(cm)'))
+                let bmi = (userWeight / ((userHeight/100)**2)).toFixed(2)
+                let grade = bmi>=25?'비만':bmi>=23?'과체중':bmi>=18.5?'정상':'저체중'
+                document.write(`
+                <caption>신체 정보</caption>
+                    <tr>
+                        <th scope="row">이름</th>
+                        <td>${userName}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">체중</th>
+                        <td>${userWeight}kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">키</th>
+                        <td>${userHeight}cm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">BMI 지수</th>
+                        <td><strong>${bmi}</strong>
+                    </tr>
+                    <tr>
+                        <th scope="row">비만</th>
+                        <td><strong>${grade}</strong>
+                    </tr>
+            </table>`)
+        </script>
+            <section class="bmi-range" aria-labelledby="range-title">
+                <div class="range-heading">
+                    <h2 id="range-title">BMI 기준 범위</h2>
+                    <span>현재 BMI <strong><script>${bmi}</script></strong></span>
+                </div>
+                <div class="bar-wrap">
+                    <div class="bmi-bar" role="img" aria-label="BMI 기준: 저체중 18.5 미만, 정상 18.5에서 22.9, 과체중 23에서 24.9, 비만 25 이상. 현재 BMI ${bmi}는 비만 구간입니다.">
+                        <span class="segment underweight">저체중</span>
+                        <span class="segment normal">정상</span>
+                        <span class="segment overweight">과체중</span>
+                        <span class="segment obesity">비만</span>
+                    </div>
+                    <span class="marker" aria-hidden="true"><b><script>${bmi}</script></b></span>
+                </div>
+                <div class="range-labels" aria-hidden="true">
+                    <span>18.5 미만</span>
+                    <span>18.5–22.9</span>
+                    <span>23–24.9</span>
+                    <span>25 이상</span>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
