@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objct - 객체 사물</title>
+</head>
+<body>
+    <script>
+        let person = {name:"장예원",gender:"여자",married:false}
+        console.log(person["name"][1]) // 장예원
+        console.log(person.gender.length) // 여자
+        let person2 = {name:"장예원",gender:"여자",married:true}
+        console.log(person2.name)
+        person2.name = '정현진'
+        console.log(person2)
+
+        let newPerson = {...person, age:29, name: "김가온"}
+        console.log(newPerson)
+        
+    </script>
+</body>
+</html>

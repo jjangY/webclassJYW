@@ -15,24 +15,25 @@
             for(let i=0 ; i<classRoom.length ; i++){
 
                 let hobbies = '';
-                for(let j=0 ; j<classRoom[i][4].length ; j++){
-                    hobbies = hobbies + `<span>#${classRoom[i][4][j]}</span>`
+                for(let j=0 ; j<classRoom[i].hobbies.length ; j++){
+                    hobbies = hobbies + `<span>#${classRoom[i].hobbies[j]}</span>`
                 }
 
 
 document.write(`<li>
             <figure>
-                <img src="./img/${classRoom[i][5]}" alt="${classRoom[i][0]} 프사">
+                <img src="./img/${classRoom[i].thumbnailFileName}"
+                alt="${classRoom[i].name} 프사">
             </figure>
             <dl>
                 <dt>이름</dt>
-                <dd>${classRoom[i][0]}</dd>
+                <dd>${classRoom[i].name}</dd>
                 <dt>성별</dt>
-                <dd>${classRoom[i][2]}</dd>
+                <dd>${classRoom[i].gender}</dd>
                 <dt>나이</dt>
-                <dd>${classRoom[i][1]}</dd>
+                <dd>${classRoom[i].age}</dd>
                 <dt>결혼</dt>
-                <dd>${classRoom[i][3]?"기혼":"미혼"}</dd>
+                <dd>${classRoom[i].married?"기혼":"미혼"}</dd>
                 <dt>취미</dt>
                 <dd>
                     ${hobbies}

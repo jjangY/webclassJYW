@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function - 함수</title>
+</head>
+<body>
+    <script>
+        // alert('안녕하세요')
+        // console.log('안녕하세요')
+        // prompt('이름입력하세용')
+        // Number('100')
+
+        function a(){
+            alert('안녕하세요')
+        }
+        
+        function b(name,age){
+            document.write(`<p>${name}님 안녕하세요</p>`)
+            document.write(`<p>${name}님은 ${age}살 이시군요</p>`)
+        }
+        b('정현진',45)
+        b('정선민',20)
+
+        function c(person){
+            document.write(`<p>${person[0]}님 반갑습니다.</p>`)
+            document.write(`<p>${person[0]}님은 ${person[1]}세이시군요.</p>`)
+        }
+        c(['정현진',44])
+        
+        function d(person1,person2){
+            document.write(`<p>${person1.name}님 반갑습니다.</p>`)
+            document.write(`<p>${person1.name}님은 ${person1.age}세이시군요.</p>`)
+            document.write(`<p>${person2.name}님 반갑습니다.</p>`)
+            document.write(`<p>${person2.name}님은 ${person2.age}세이시군요.</p>`)
+        }
+        d({name:'함국주1',age:20},{name:'함국주2',age:30})
+        
+        function e(){
+            alert('히히')
+            return 3
+            alert('헤헤')
+        }
+        // let result1 = e()
+        // console.log(result1)
+        
+        function g(name){
+            document.write(`<p>${name}님 좋은아침입니다.</p>`)
+            return {na:name}
+        }
+        // let user = g('성대한')
+        // alert(user.na)
+        
+        function getAver(score){
+            return (score[0]+score[1]+score[2])/3
+        }
+        alert(getAver([98,87,100]))
+        
+        
+                
+        
+        
+                
+                
+    </script>
+</body>
+</html>

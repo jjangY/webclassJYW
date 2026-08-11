@@ -27,6 +27,12 @@
            ['배수정',38,'여자',false,['독서','뮤지컬보기']],
            ['유채린',24,'여자',false,['여행가기','요리하기','블로그쓰기','음악듣기']],
         ]
+        let classRoom2 = classRoom.map(el=>({name:el[0],age:el[1],gender:el[2]}));
+        console.log(classRoom2)
+        let classRoomMan = classRoom.filter(el=>el[2]==='남자');
+        console.log(classRoomMan)
+        let classRoom30downObj = classRoom.filter(el=>el[1]<=30).map(el=>({name:el[0],age:el[1]}))
+        console.log(classRoom30downObj)
     </script>
 </body>
 </html>

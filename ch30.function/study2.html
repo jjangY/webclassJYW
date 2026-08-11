@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값으로서 사용되는 함수</title>
+</head>
+<body>
+    <script>
+
+        // a()
+        // function a(){
+        //     alert('aaa')
+        // }
+
+        
+        // let b = function(){
+        //     alert('bbb')
+        // }
+        // b()        
+
+        // let c = ()=>{
+        //     alert('ccc')
+        // }
+        // c()
+
+        // let d = (name)=>{
+        //     alert(name+"님 반갑습니다.")
+        // }
+        // d('정현진')
+
+        // let g = name => alert(name+"님 반갑습니다.")
+        // g('김예림')
+
+        // let sum = (a,b)=>{
+        //     return a+b
+        // }
+        // // alert(sum(1,2))
+
+        // let sum2 = (a,b)=>a+b
+        // alert(sum2(10,20))
+
+
+        // function abc(a){
+        //     a()
+        // }
+        // abc(function(){alert('test')})
+
+        // 사물 -> 객체
+        let fan = {
+            body:'검은색',
+            height:120,
+            width:30,
+            weight:'6kg',
+            powerOn:function(){
+                alert('선풍기 전원이 켜졌습니다.')
+                this.fanSpeed=1
+            },
+            powerOff:function(){
+                alert('선풍기 전원이 꺼졌습니다.')
+                this.fanSpeed=0
+            },
+            fanSpeed:0,
+            fanSpeedUp:function(){
+                // 이 선풍기의 팬스피드를 올리는 기능
+                this.fanSpeed+=1
+            },
+            fanSpeedDown:function(){
+                // 이 선풍기의 팬스피드를 내리는 기능
+                this.fanSpeed-=1
+            },
+            showFanSpeed:function(){
+                alert(`현재 선풍기의 풍속은 ${this.fanSpeed}단계입니다.`)
+            }
+        }
+        
+        fan.body
+        fan.weight
+        fan.powerOn()
+        fan.powerOff()
+        fan.showFanSpeed()
+        fan.powerOn()
+        fan.showFanSpeed()
+        fan.fanSpeedUp()
+        fan.showFanSpeed()
+
+        console.log()
+        Math.round()
+        window.document.write()
+        window.alert('ttt')
+    
+    </script>
+</body>
+</html>
