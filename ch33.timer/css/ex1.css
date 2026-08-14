@@ -1,0 +1,29 @@
+.popup{
+    position: fixed;
+    left: calc(50% - 250px);
+    top: 50%;
+    width: 500px;
+    border:1px solid red;
+    z-index: 1000;
+    transform: translateY(-50%);
+    background-color: rgba(255, 175, 215, 0.74);
+    padding: 20px 50px;
+    border-radius: 12px;
+    background-color: burl(5px);
+}
+.popup.off{
+    display: none;
+
+}
+.popup figure{margin: 0;}
+.popup img{
+    width:100%;
+}
+.controler{
+    display: flex;
+    justify-content: space-between;
+}
+.controler span{
+    cursor: pointer;
+
+}

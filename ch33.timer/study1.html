@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+    <script>
+        let timer1 = setTimeout(function(){
+            alert('장뀨 안뇽')
+        },3000);
+        clearTimeout(timer1);
+        let timer2 = setTimeout(function(){
+            alert('예원이 안뇽')
+        },6000);
+        clearTimeout(timer2);
+
+        let count = 0;
+        let timer3 = setInterval(function(){
+            count++;
+            if(count===5){clearInterval(timer3);}
+            console.log('test');
+        },1000);
+        
+        let count2 = 5;
+
+        function countdown(){
+            count2--;
+            console.log(count2)
+            if(count2===0){return}
+            setTimeout(function(){
+                countdown();
+            },1000);
+        }
+
+        countdown();
+    </script>
+</body>
+</html>
