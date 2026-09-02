@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수</title>
+</head>
+<body>
+    <script>
+        //객체를 생성하는 함수
+        function Person(option){
+            this.name = option.n;
+            this.gender = option.g;
+            this.sayhello = function(){
+                alert(`안녕하세요. 저는 ${this.name}입니다.`)
+            }
+        }
+        let person1 = new Person({
+            n:'장예원',
+            g:'여자'
+        });
+        let person2 = new Person({n:'김예훈',g:'남자'});
+        let person3 = new Person({n:'박예원',g:'여자'});
+        person1.sayhello();
+        person2.sayhello();
+        person3.sayhello();
+    </script>
+</body>
+</html>
