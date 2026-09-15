@@ -9,3 +9,11 @@ $('.c').removeClass('on')
 $('.b').next().addClass('on')
 $('.c').prev().html('네이버')
 $('.c').parent().css('background-color','beige')
+
+$('#btn').click(()=>{
+    $('.frame').css('color','blue');
+})
+$('.list>li').click(function(){
+    let idx = $(this).index();
+    alert(idx);
+});
